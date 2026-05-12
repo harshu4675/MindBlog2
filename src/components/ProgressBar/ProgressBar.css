@@ -1,0 +1,17 @@
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: transparent;
+  z-index: calc(var(--z-sticky) + 10);
+  pointer-events: none;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: var(--gradient-primary);
+  transition: width 0.1s linear;
+  border-radius: 0 var(--border-radius-full) var(--border-radius-full) 0;
+}

@@ -1,0 +1,79 @@
+/* ── Breakpoints reference
+   xs:  < 480px   (small phones)
+   sm:  >= 480px  (large phones)
+   md:  >= 768px  (tablets)
+   lg:  >= 1024px (laptops)
+   xl:  >= 1280px (desktops)
+   2xl: >= 1536px (large screens)
+── */
+
+/* ── Grid helpers ── */
+.blog-grid {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .blog-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-5);
+  }
+}
+
+@media (min-width: 1024px) {
+  .blog-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--space-5);
+  }
+}
+
+/* ── Featured grid ── */
+.featured-grid {
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .featured-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .featured-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ── Hide/show utilities ── */
+.show-mobile {
+  display: block;
+}
+.hide-mobile {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .show-mobile {
+    display: none;
+  }
+  .hide-mobile {
+    display: block;
+  }
+}
+
+/* ── Two column layout ── */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+@media (min-width: 1024px) {
+  .two-col {
+    grid-template-columns: 1fr 340px;
+    gap: var(--space-12);
+  }
+}

@@ -1,0 +1,89 @@
+.ad-placement {
+  position: relative;
+  width: 100%;
+  background: var(--bg-secondary);
+  border: 1.5px dashed var(--border-color);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+}
+
+.ad-placement-label {
+  position: absolute;
+  top: var(--space-2);
+  left: var(--space-2);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-tertiary);
+  background: var(--bg-card);
+  padding: 2px 6px;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--border-color);
+  z-index: 1;
+}
+
+.ad-placement-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ad-placement-placeholder {
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+  text-align: center;
+  margin: 0;
+}
+
+/* Sizes */
+.ad-placement-banner {
+  height: 90px;
+}
+
+.ad-placement-banner .ad-placement-content {
+  height: 90px;
+}
+
+.ad-placement-rectangle {
+  height: 250px;
+}
+
+.ad-placement-rectangle .ad-placement-content {
+  height: 250px;
+}
+
+.ad-placement-sidebar {
+  height: 600px;
+}
+
+.ad-placement-sidebar .ad-placement-content {
+  height: 600px;
+}
+
+.ad-placement-in-content {
+  height: 120px;
+  margin-block: var(--space-8);
+}
+
+.ad-placement-in-content .ad-placement-content {
+  height: 120px;
+}
+
+.ad-placement-footer {
+  height: 90px;
+}
+
+.ad-placement-footer .ad-placement-content {
+  height: 90px;
+}
+
+@media (max-width: 640px) {
+  .ad-placement-sidebar {
+    height: 250px;
+  }
+
+  .ad-placement-sidebar .ad-placement-content {
+    height: 250px;
+  }
+}

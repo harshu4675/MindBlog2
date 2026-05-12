@@ -1,0 +1,105 @@
+.manage-users {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.manage-users-stats {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.manage-users-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-3) var(--space-5);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  min-width: 80px;
+  border-top: 3px solid var(--stat-color);
+}
+
+.manage-users-stat-value {
+  font-size: var(--text-xl);
+  font-weight: 800;
+  color: var(--stat-color);
+  line-height: 1;
+}
+
+.manage-users-stat-label {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 3px;
+}
+
+.manage-user-cell {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.manage-user-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.manage-user-name {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.manage-user-email {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+}
+
+.manage-role-select {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--border-radius-full);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  appearance: none;
+}
+
+.manage-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: var(--border-radius-full);
+}
+
+.manage-status-badge::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.manage-status-badge.active {
+  color: var(--color-success);
+  background: var(--color-success-light);
+}
+
+.manage-status-badge.inactive {
+  color: var(--color-gray-500);
+  background: var(--color-gray-100);
+}

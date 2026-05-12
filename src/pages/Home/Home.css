@@ -1,0 +1,112 @@
+.home-page {
+  overflow-x: hidden;
+}
+
+/* ── Latest blogs ── */
+.latest-blogs-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: var(--space-10);
+  gap: var(--space-6);
+}
+
+.latest-blogs-header .section-header {
+  margin-bottom: 0;
+}
+
+.latest-blogs-load-more {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-12);
+}
+
+.latest-blogs-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-20) var(--space-6);
+  text-align: center;
+}
+
+.latest-blogs-empty-icon {
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: var(--space-2);
+}
+
+.latest-blogs-empty h3 {
+  font-size: var(--text-xl);
+  color: var(--text-primary);
+}
+
+.latest-blogs-empty p {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* ── Why section ── */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-5);
+  margin-top: var(--space-12);
+}
+
+@media (min-width: 768px) {
+  .why-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.why-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-xl);
+  padding: var(--space-6);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
+  box-shadow: var(--shadow-card);
+  height: 100%;
+}
+
+.why-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.why-card-icon {
+  font-size: 2rem;
+  line-height: 1;
+  display: block;
+  margin-bottom: var(--space-4);
+}
+
+.why-card-title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+  font-family: var(--font-sans);
+}
+
+.why-card-desc {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: var(--leading-relaxed);
+  margin: 0;
+}
+
+@media (max-width: 639px) {
+  .latest-blogs-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .why-card {
+    padding: var(--space-5);
+  }
+}

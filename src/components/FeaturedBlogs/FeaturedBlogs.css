@@ -1,0 +1,25 @@
+.featured-blogs-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: var(--space-10);
+  gap: var(--space-6);
+}
+
+.featured-blogs-header .section-header {
+  margin-bottom: 0;
+}
+
+.featured-empty {
+  text-align: center;
+  padding: var(--space-16);
+  color: var(--text-tertiary);
+  font-size: var(--text-base);
+}
+
+@media (max-width: 640px) {
+  .featured-blogs-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
